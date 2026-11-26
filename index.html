@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+    <section class="panel">
+        <img src="assets/photo-1579751626657-72bc17010498.jpg" alt="First photo">
+
+        <div class="text left">
+            <h2>Regionale Zutaten</h2>
+            <p>Wir verwenden hochwertige, möglichst regionale Zutaten und bereiten alles mit viel Leidenschaft und Kreativität frisch zu. Dabei stehen Qualität, guter Geschmack und das gemeinsame Genießen im Mittelpunkt.</p>
+        </div>
+
+        <div class="text bottom">
+            <h2>Aus dem Steinofen</h2>
+            <p>Unser Teig reift mindestens 48 Stunden und wird bei hoher Hitze im Steinofen gebacken: außen knusprig, innen luftig.</p>
+        </div>
+    </section>
+
+    <section class="panel shade">
+        <img src="assets/Pizza_Flour_00_480x480.jpg" alt="Pizza flour">
+
+        <div class="text">
+            <h2>Second Section</h2>
+            <p>Write something about your second topic here.</p>
+        </div>
+    </section>
+</main>
+
+<!-- Navigation trigger area -->
+<div class="nav-trigger" id="navTrigger"></div>
+
+<!-- Navigation bar -->
+<nav class="top-nav" id="topNav" aria-label="Hauptnavigation">
+    <a href="#" class="nav-brand" data-panel="0" data-text="0">PAM PAM</a>
+
+    <div class="nav-links">
+        <button data-panel="0" data-text="0">Regionale Zutaten</button>
+        <button data-panel="0" data-text="1">Aus dem Steinofen</button>
+        <button data-panel="1" data-text="0">Second Section</button>
+    </div>
+</nav>
+
+<!-- Extra interface -->
+<div class="brand">PIZZERIA PAM PAM</div>
+<div class="dots" id="dots"></div>
+<div class="hint" id="hint">Scrollen<span></span></div>
+
+<script src="script.js"></script>
+</body>
+</html>
