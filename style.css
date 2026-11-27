@@ -7,12 +7,12 @@
 }
 
 :root {
-  --fire-red: #e04f16;      /* Orange fire red */
-  --warm-brown: #9c7a54;    /* Warm brown */
-  --charcoal: #363638;      /* Dusty light charcoal gray */
-  --charcoal-card: #414144; /* Slightly lighter charcoal for cards */
-  --light-green: #66bb6a;   /* Lighter green for open status */
-
+  --fire-red: #e04f16;
+  --warm-brown: #9c7a54;
+  --charcoal: #363638;
+  --charcoal-card: #414144;
+  --light-green: #66bb6a;
+  
   --tan: #ceb598;
   --cream: #f8e1c7;
   --mozzarella: #FFF4E5;
@@ -76,7 +76,7 @@ body {
   }
 }
 
-/* THREE-PHOTO GRID (Clean responsive layout) */
+/* THREE-PHOTO GRID */
 .photo-grid {
   position: absolute;
   inset: 0;
@@ -618,7 +618,6 @@ p {
   justify-content: space-between;
   gap: 30px;
 
-  /* Change these three lines for translucency and frosted glass */
   background: rgba(54, 54, 56, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -630,6 +629,12 @@ p {
   opacity: 0;
   visibility: hidden;
   transition: transform 0.65s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease, visibility 0.4s;
+}
+
+.top-nav.visible {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav-brand {
@@ -825,7 +830,7 @@ p {
   }
 }
 
-/* MOBILE FIXES (Moved text lower for thicker mobile nav bar & stacked grid images nicely) */
+/* MOBILE */
 @media (max-width: 700px) {
   .text,
   .text.left {
@@ -834,7 +839,7 @@ p {
     left: 0;
     right: 0;
     padding: 30px 24px;
-    padding-top: 105px; /* Pushes text down safely below the stacked mobile navbar */
+    padding-top: 105px;
   }
 
   .text.bottom {
