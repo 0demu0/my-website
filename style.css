@@ -618,9 +618,10 @@ p {
   justify-content: space-between;
   gap: 30px;
 
-  background: rgba(54, 54, 56, 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  /* Change these three lines for translucency and frosted glass */
+  background: rgba(54, 54, 56, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
   border-bottom: 1px solid rgba(156, 122, 84, 0.3);
 
@@ -629,12 +630,6 @@ p {
   opacity: 0;
   visibility: hidden;
   transition: transform 0.65s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease, visibility 0.4s;
-}
-
-.top-nav.visible {
-  transform: translateY(0) scale(1);
-  opacity: 1;
-  visibility: visible;
 }
 
 .nav-brand {
