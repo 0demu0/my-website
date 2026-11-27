@@ -618,11 +618,12 @@ p {
   justify-content: space-between;
   gap: 30px;
 
-  background: rgba(54, 54, 56, 0.75);
+  /* Made more transparent (0.45 instead of 0.75) */
+  background: rgba(54, 54, 56, 0.45);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
-  border-bottom: 1px solid rgba(156, 122, 84, 0.3);
+  border-bottom: 1px solid rgba(156, 122, 84, 0.25);
 
   transform-origin: top center;
   transform: translateY(-110%) scale(0.95);
