@@ -1,16 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Website</title>
+    <title>Pizzeria Pam Pam – Regensburg</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main class="stage">
+<main class="stage" id="stage">
+    <!-- Panel 0: Intro picture -->
     <section class="panel">
-        <img src="assets/photo-1579751626657-72bc17010498.jpg" alt="First photo">
+        <img src="assets/0.jpg" alt="Pizzeria Pam Pam Ambiente">
+
+        <div class="text left">
+            <h2>Willkommen im Pam Pam</h2>
+            <p>Erlebt die traditionsreiche Gastfreundschaft und italienische Lebensfreude im Herzen von Regensburg.</p>
+        </div>
+    </section>
+
+    <!-- Panel 1: Regionale Zutaten & Steinofen -->
+    <section class="panel">
+        <img src="assets/1.jpg" alt="Frische Zutaten und Pizza">
 
         <div class="text left">
             <h2>Regionale Zutaten</h2>
@@ -23,17 +33,157 @@
         </div>
     </section>
 
+    <!-- Panel 2: Außenbereiche (Grid) -->
     <section class="panel shade">
-        <img src="assets/Pizza_Flour_00_480x480.jpg" alt="Pizza flour">
+        <div class="photo-grid">
+            <div class="grid-img-wrap"><img src="assets/2.webp" alt="Terrasse am Römling"></div>
+            <div class="grid-img-wrap"><img src="assets/3.webp" alt="Blick auf den Haidplatz"></div>
+            <div class="grid-img-wrap"><img src="assets/4.webp" alt="Außenbereich Pam Pam"></div>
+        </div>
 
         <div class="text">
-            <h2>Second Section</h2>
-            <p>Write something about your second topic here.</p>
+            <h2>Unsere Außenbereiche</h2>
+            <p>Genießt mediterranes Flair mitten in Regensburg. Ob gemütlich am Römling oder mit Blick auf das lebendige Treiben am Haidplatz – bei uns findet jeder seinen Lieblingsplatz für gutes Essen und entspannte Drinks.</p>
         </div>
     </section>
 </main>
 
-<!-- Navigation trigger area -->
+<!-- Normal scrolling charcoal page after the slides -->
+<section class="normal-page" id="normalPage">
+    <div class="normal-content">
+
+        <!-- Quick Highlights Bar -->
+        <div class="highlights-strip">
+            <div class="highlight-item">
+                <span class="highlight-badge">Seit 1971</span>
+                <p>Erste Holzofen-Pizzeria Regensburgs</p>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-badge">48h Reifezeit</span>
+                <p>Hausgemachter Sauerteig-Pizzateig</p>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-badge">3. Generation</span>
+                <p>Familiengeführt mit Herz & Tradition</p>
+            </div>
+        </div>
+
+        <!-- Vision & Motivation -->
+        <div class="story-grid">
+            <article class="story-block">
+                <h2>Unsere Vision</h2>
+                <p>Wir bewahren unseren traditionellen Geschmack und verbinden ihn mit neuen Ideen, Kreationen und Aromen.</p>
+            </article>
+
+            <article class="story-block">
+                <h2>Unsere Motivation</h2>
+                <p>Unsere Leidenschaft sind glückliche Gäste, ein starkes Team und gemeinsame Erinnerungen.</p>
+            </article>
+        </div>
+
+        <!-- History -->
+        <article class="story-block history-block">
+            <h2>Unsere Geschichte</h2>
+            <p>Seit 1971 ist das Pam Pam ein Familienbetrieb mit italienischer Tradition. Als erste Holzofen-Pizzeria Regensburgs wurde es von unserem Großonkel Odero eröffnet. Über Generationen hinweg wurde die Leidenschaft für gutes Essen und italienische Gastfreundschaft weitergegeben.</p>
+            <p>2002 holte unser Vater Clementino das Restaurant zurück in die Familie und führte es nach einer umfangreichen Renovierung im traditionellen Stil weiter. Seit Januar 2025 führen wir das Pam Pam nun in dritter Generation gemeinsam als Familie fort – mit dem Ziel, unsere Geschichte und Tradition zu bewahren und gleichzeitig neue Kapitel zu schreiben.</p>
+        </article>
+
+        <!-- Classics / Specialties Preview -->
+        <section class="specialties-section">
+            <h2>Unsere Klassiker aus dem Steinofen</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-top">
+                        <h3>Pizza Pam Pam</h3>
+                        <span class="menu-tag">Haus-Spezialität</span>
+                    </div>
+                    <p>Fruchtige San-Marzano-Tomaten, Fior di Latte, luftgetrockneter Parmaschinken, frischer Rucola und gehobelter Parmesan.</p>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-top">
+                        <h3>Margherita Verace</h3>
+                        <span class="menu-tag">Klassiker</span>
+                    </div>
+                    <p>Tomatensauce, cremiger Büffelmozzarella, frisches Basilikum und kaltgepresstes Olivenöl extra vergine.</p>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-top">
+                        <h3>Diavola Artigianale</h3>
+                        <span class="menu-tag">Pikant</span>
+                    </div>
+                    <p>San-Marzano-Tomaten, Fior di Latte, würzige kalabrische Salami, rote Zwiebeln und eingelegte Peperoncini.</p>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-top">
+                        <h3>Tartufo & Funghi</h3>
+                        <span class="menu-tag">Vegetarisch</span>
+                    </div>
+                    <p>Weiße Pizza mit Fior di Latte, gebratenen regionalen Champignons, feiner Trüffelcreme und frischem Thymian.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact, Opening Hours & Reservation Section -->
+        <section class="contact-section">
+            <div class="reservation-box">
+                <h2>Möchtest du reservieren?</h2>
+                <p>Bitte ruf uns direkt an: <a href="tel:0941561371" class="phone-link">0941 / 561371</a>. Wir nehmen Reservierungen <strong>NUR telefonisch</strong> an 🙏 wir bitten um Verständnis!</p>
+                <p>Wir kommen nicht mit der Beantwortung der Mails hinterher bei Reservierungen, telefonisch sind wir schneller :)</p>
+                <p class="closing-greet">Wir freuen uns auf euch!<br><em>il vostro Team del Pam Pam</em></p>
+            </div>
+
+            <!-- Google Maps Style Widget -->
+            <div class="maps-widget">
+                <div class="maps-widget-header">
+                    <div class="maps-header-left">
+                        <img src="assets/1.jpg" alt="Pizzeria Pam Pam Logo" class="maps-logo">
+                        <div>
+                            <h3>Pizzeria Pam Pam</h3>
+                            <div class="maps-rating">
+                                <span class="rating-number">4.6</span>
+                                <span class="stars">★★★★★</span>
+                                <span class="reviews">(Google Rezensionen)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="tel:0941561371" class="maps-call-pill">📞 Anrufen</a>
+                </div>
+                <div class="maps-widget-body">
+                    <p class="status-row">
+                        <span class="status-dot" id="statusDot"></span>
+                        <span id="statusText">Berechne Öffnungszeit...</span>
+                    </p>
+                    <p class="maps-address">📍 Haidplatz 5, 93047 Regensburg</p>
+                </div>
+                <div class="maps-widget-footer">
+                    <a href="https://www.google.com/maps/place/Pizzeria+PAM+PAM/@49.0200371,12.0900265,775m/data=!3m1!1e3!4m6!3m5!1s0x479fc1a8d5ad1f55:0x81f4a625a6d37dcb!8m2!3d49.0198341!4d12.0918438!16s%2Fg%2F1x6q0rw2?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="maps-action-btn">Auf Google Maps öffnen ➔</a>
+                </div>
+            </div>
+
+            <div class="address-grid">
+                <div class="info-block">
+                    <h3>Öffnungszeiten</h3>
+                    <ul class="hours-list">
+                        <li><span>Montag</span><span>Ruhetag</span></li>
+                        <li><span>Dienstag – Sonntag</span><span>11:30 – 22:00 Uhr</span></li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h3>Kontakt & Adresse</h3>
+                    <p><a href="tel:0941561371">Tel: 0941 561371</a></p>
+                    <p>Haidplatz 5<br>93047 Regensburg</p>
+                </div>
+            </div>
+
+            <footer class="page-footer">
+                <p>© Pizzeria Pam Pam Regensburg • Tradition seit 1971</p>
+                <button class="back-top-btn" id="backToTopBtn">↑ Zurück zum Anfang</button>
+            </footer>
+        </section>
+    </div>
+</section>
+
+<!-- Invisible hover trigger at the very top of the window -->
 <div class="nav-trigger" id="navTrigger"></div>
 
 <!-- Navigation bar -->
@@ -41,14 +191,16 @@
     <a href="#" class="nav-brand" data-panel="0" data-text="0">PAM PAM</a>
 
     <div class="nav-links">
-        <button data-panel="0" data-text="0">Regionale Zutaten</button>
-        <button data-panel="0" data-text="1">Aus dem Steinofen</button>
-        <button data-panel="1" data-text="0">Second Section</button>
+        <button data-panel="0" data-text="0">Willkommen</button>
+        <button data-panel="1" data-text="0">Zutaten</button>
+        <button data-panel="1" data-text="1">Steinofen</button>
+        <button data-panel="2" data-text="0">Außenbereiche</button>
+        <button id="navNormalBtn">Über uns & Kontakt</button>
     </div>
 </nav>
 
 <!-- Extra interface -->
-<div class="brand">PIZZERIA PAM PAM</div>
+<div class="brand" id="brand">PIZZERIA PAM PAM</div>
 <div class="dots" id="dots"></div>
 <div class="hint" id="hint">Scrollen<span></span></div>
 
